@@ -61,7 +61,7 @@
     </head>
     <body>
         <h2 id="title"><p>THE <br><span id='headingColor'></span><br>GAME</p></h2>
-        <h4><span id="message" onclick="reloadFunc()"></span><button id="easyBtn">EASY</button><button id="hardBtn">HARD</button></h4>
+        <h4><span id="message" onclick="reloadFunc()"></span></h4>
     <div id="container">
         <div class="square"></div>
         <div class="square"></div>
@@ -76,8 +76,6 @@
         var message=document.querySelector("#message");
         var heading=document.querySelector("#headingColor");
         var title=document.querySelector("#title");
-        var easyBtn=document.querySelector("#easyBtn");
-        var hardBtn=document.querySelector("#hardBtn");
 
         for (var i = 0 ;i < square.length; i++) {
             generateRandomColor();

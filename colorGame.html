@@ -83,7 +83,7 @@
             
             square[i].addEventListener("click",function(){
             if (displayColor==this.style.background) {
-                message.textContent="Well Done!";
+                message.textContent="Well Done! Click to reload...";
                 title.style.background=displayColor;
                 for (var i = 0 ;i < square.length; i++) {
                     square[i].style.background=displayColor;
@@ -91,7 +91,7 @@
             }
             else{
                 this.style.background="black";
-                 message.textContent="TryAgain?";
+                 message.textContent="Nah,Try Again? Click to reload...";
             }
             });
         }
